@@ -47,7 +47,7 @@ struct ProduceSummaryView: View {
                 Spacer()
                 
                 BarcodeImageView(code: currentProduce)
-                    .frame(width: 200, height: 150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    .frame(width: 300, height: 200, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 
                 Spacer()
             }

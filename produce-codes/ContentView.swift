@@ -23,6 +23,9 @@ struct ContentView: View {
     var body: some View {
         
         ZStack {
+            
+            
+            
             // User has answered a question
             if currentResult != "" {
                 
@@ -75,14 +78,13 @@ struct ContentView: View {
             }
         }
         .onAppear() {
-            Backend().getJSONObjects(url : "https://ryan-schreiber.github.io/produce-codes-library/plu_data.json") { (objects) in
+            Backend().getJSONObjects(url : "https://produce-codes-library.github.io/plu-data/data/plu_data.json") { (objects) in
                 self.produceObjectList = objects;
             }
-            Backend().getJSONObjects(url : "https://ryan-schreiber.github.io/produce-codes-library/collections_data.json") { (objects) in
+            Backend().getJSONObjects(url : "https://produce-codes-library.github.io/plu-data/data/collections_data.json") { (objects) in
                 self.collectionObjectList = objects;
             }
         }
-        
     }
 }
 

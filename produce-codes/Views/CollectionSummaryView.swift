@@ -41,6 +41,11 @@ struct CollectionSummaryView: View {
                             Divider().frame(width: contentWidth, height: 1, alignment: .center)
                         }
                         }
+                        
+                        Rectangle()
+                            .foregroundColor(.white)
+                            .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        
                         Spacer()
                         
                     }
